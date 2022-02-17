@@ -23,8 +23,8 @@ font-family: 'Poppins', sans-serif;
 
  :root{
      --primary: #54B9B8;
-     --secondary: #F7ECDE;
-     --bg: #FBF8F1;
+     --secondary: #212121;
+     --bg: #121212;
  }
 
 /* nav section */
@@ -63,7 +63,7 @@ font-family: 'Poppins', sans-serif;
     cursor: pointer;
     position: relative;
     /* color: white; */
-    color: black;
+    color: white;
 }
 
 .right-nav ul li::after{
@@ -161,7 +161,7 @@ font-family: 'Poppins', sans-serif;
 .hero-socials img{
     height: 40px;
     cursor: pointer;
-    /* filter: invert(); */
+    filter: invert();
 }
 
 .main-logo{
