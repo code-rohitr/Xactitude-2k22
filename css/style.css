@@ -7,7 +7,7 @@ font-family: 'Poppins', sans-serif;
 
 
  html, body{
-     overflow-y: hidden ;
+     
  }
 
  body{
@@ -29,7 +29,7 @@ font-family: 'Poppins', sans-serif;
  }
 
 /* nav section */
-.nav{
+.nav,.navbar{
     /* border: 2px solid red; */
     display: flex;
     align-items: center;
@@ -38,6 +38,7 @@ font-family: 'Poppins', sans-serif;
     padding: 10px 5%;
     /* height: 12vh;
     border: 2px solid red; */
+    z-index:10;
 }
 
 .left-nav img{
