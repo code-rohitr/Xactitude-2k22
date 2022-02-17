@@ -24,7 +24,8 @@ font-family: 'Poppins', sans-serif;
  :root{
      --primary: #54B9B8;
      --secondary: #F7ECDE;
-     --bg: #FBF8F1;
+     --bg: #464646;
+     --text: #fdfdfd;
  }
 
 /* nav section */
@@ -42,7 +43,6 @@ font-family: 'Poppins', sans-serif;
 .left-nav img{
     /* border: 2px solid green; */
     height: 80px;
-    filter: invert();
 }
 
 .right-nav ul{
@@ -63,7 +63,7 @@ font-family: 'Poppins', sans-serif;
     cursor: pointer;
     position: relative;
     /* color: white; */
-    color: black;
+    color: var(--text);
 }
 
 .right-nav ul li::after{
