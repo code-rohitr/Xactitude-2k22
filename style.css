@@ -13,6 +13,157 @@ font-family: 'Poppins', sans-serif;
  body{
      margin: 0px;
      padding: 0px;
+     background-color: var(--bg);
  }
 
- 
+ a{
+     color: inherit;
+     text-decoration: none;
+ }
+
+ :root{
+     --primary: #54B9B8;
+     --secondary: #212121;
+     --bg: #121212;
+ }
+
+/* nav section */
+.nav{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    /* height: 12vh;
+    border: 2px solid red; */
+}
+
+.left-nav img{
+    /* border: 2px solid green; */
+    height: 80px;
+}
+
+.right-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.right-nav ul li{
+    margin-left: 40px;
+    list-style: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+
+.right-nav ul li::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 10%;
+    background-color: var(--primary);
+    border-radius: 100px;
+    transition: 100ms width ease-in-out;
+}
+
+
+.right-nav ul li:hover::after{
+    width: 100%;
+}
+
+
+
+.btn{
+    border: 3px solid var(--primary);
+    background: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    color: var(--primary);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 100ms color ease-in-out, 100ms background-color ease-in-out;
+}
+
+.nav-btn{
+    margin-left: 40px;
+}
+
+.nav-btn:hover{
+    background-color: var(--primary);
+    color: white;
+}
+
+.active{
+    position: relative;    
+}
+
+.active::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: var(--primary);
+    border-radius: 100px;
+}
+
+
+/* hero section */
+
+.hero{
+    height: 90vh;
+    background-color: var(--bg);
+    position: relative;
+}
+
+#particles-js{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid red; */
+    /* z-index: 2; */
+    opacity: 0.5;
+}
+
+.hero-socials{
+    /* border: 2px solid red; */
+    background-color: var(--secondary);
+    height: 140px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    position: fixed;
+    top: 40%;
+    left: 20px;
+    border-radius: 10px;
+}
+
+.hero-socials img{
+    height: 40px;
+    cursor: pointer;
+    filter: invert();
+}
+
+.main-logo{
+    height: 250px;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
