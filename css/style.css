@@ -6,8 +6,8 @@ font-family: 'Poppins', sans-serif;
  */
 
 
- html, body{
-     
+ .body{
+     overflow-y: hidden;
  }
 
  body{
