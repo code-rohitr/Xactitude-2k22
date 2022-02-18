@@ -1,16 +1,18 @@
 .navbar-scroll{
-  background-color: #8d5be9;
+  background-color:#2F3763;
+
+  ;
   transition-delay: background-color 3s;
 }
 .top-content{
   margin-top:8% ;
 }
 .aboutevents{
-  width: 80%;
-  height: 30vh;
+  width: 95%;
+  height: 100%;
   padding: 3%;
   background-color: #6e6e6e;
-  margin:2% 10%;
+  margin:2% 3%;
   color:var(--text);
 }
 .container {
@@ -26,28 +28,46 @@ a:hover{
 }
   
   .event1 {
-    --bg-color: #ffd861;
+    --bg-color: #f7c739;
     --bg-color-light: #ffeeba;
     --text-color-hover: #4C5656;
     --box-shadow-color: rgba(255, 215, 97, 0.48);
   }
   
   .event2 {
-    --bg-color: #8d5be9;
+    --bg-color: #873ba5;
     --bg-color-light: #e2fced;
     --text-color-hover: #4C5656;
     --box-shadow-color: rgba(184, 249, 211, 0.48);
   }
   
   .event3 {
-    --bg-color: #305f72;
+    --bg-color: #51c0ec;
     --bg-color-light: #F0E7FF;
     --text-color-hover: #fff;
     --box-shadow-color: rgba(206, 178, 252, 0.48);
   }
   
-  .human-resources {
-    --bg-color: #DCE9FF;
+  .event4 {
+    --bg-color: #37f847;
+    --bg-color-light: #f1f7ff;
+    --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(220, 233, 255, 0.48);
+  }
+  .event5 {
+    --bg-color: #e638b2;
+    --bg-color-light: #f1f7ff;
+    --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(220, 233, 255, 0.48);
+  }
+  .event6 {
+    --bg-color: #f55727;
+    --bg-color-light: #f1f7ff;
+    --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(220, 233, 255, 0.48);
+  }
+  .event7 {
+    --bg-color: #212ff8;
     --bg-color-light: #f1f7ff;
     --text-color-hover: #4C5656;
     --box-shadow-color: rgba(220, 233, 255, 0.48);
@@ -150,8 +170,35 @@ a:hover{
     transform: translateY(-30%);
 }
 
+.s1{
+  height: 400px;
+  width: 500px;
+  font-size: 30px;
+  display: grid;
+  text-align: center;
+}
+
+.s1 p{
+  position: relative;
+  top:30px;
+  font-size: 25px;
+  color:var(--secondary);
+}
+
+.carousel-inner ::after{
+  background-color: transparent;
+}
+
+.carousel-inner ::before{
+  background-color: transparent;
+}
+
 @media only screen and (max-width: 600px) {
   .card {
     width: 24rem;
+  }
+  .top-content{
+    position: relative;
+    top:10rem;
   }
 }
