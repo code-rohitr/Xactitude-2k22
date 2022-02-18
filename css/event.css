@@ -30,47 +30,47 @@ a:hover{
   .event1 {
     --bg-color: #f7c739;
     --bg-color-light: #ffeeba;
-    --text-color-hover: #4C5656;
+    --text-color-hover: #fff;
     --box-shadow-color: rgba(255, 215, 97, 0.48);
   }
   
   .event2 {
     --bg-color: #873ba5;
     --bg-color-light: #e2fced;
-    --text-color-hover: #4C5656;
-    --box-shadow-color: rgba(184, 249, 211, 0.48);
+    --text-color-hover: #fff;
+    --box-shadow-color: rgba(249, 184, 240, 0.48);
   }
   
   .event3 {
     --bg-color: #51c0ec;
     --bg-color-light: #F0E7FF;
     --text-color-hover: #fff;
-    --box-shadow-color: rgba(206, 178, 252, 0.48);
+    --box-shadow-color: rgba(178, 225, 252, 0.48);
   }
   
   .event4 {
     --bg-color: #37f847;
     --bg-color-light: #f1f7ff;
-    --text-color-hover: #4C5656;
-    --box-shadow-color: rgba(220, 233, 255, 0.48);
+    --text-color-hover: #fff;
+    --box-shadow-color: rgba(179, 241, 137, 0.48);
   }
   .event5 {
     --bg-color: #e638b2;
     --bg-color-light: #f1f7ff;
-    --text-color-hover: #4C5656;
-    --box-shadow-color: rgba(220, 233, 255, 0.48);
+    --text-color-hover: #fff;
+    --box-shadow-color: rgba(245, 168, 248, 0.48);
   }
   .event6 {
     --bg-color: #f55727;
     --bg-color-light: #f1f7ff;
-    --text-color-hover: #4C5656;
-    --box-shadow-color: rgba(220, 233, 255, 0.48);
+    --text-color-hover: #fff;
+    --box-shadow-color: rgba(248, 184, 148, 0.48);
   }
   .event7 {
     --bg-color: #212ff8;
     --bg-color-light: #f1f7ff;
-    --text-color-hover: #4C5656;
-    --box-shadow-color: rgba(220, 233, 255, 0.48);
+    --text-color-hover: #fff;;
+    --box-shadow-color: rgba(141, 179, 243, 0.48);
   }
   
   .card {
@@ -193,6 +193,23 @@ a:hover{
   background-color: transparent;
 }
 
+.btn{
+  position: relative;
+  transform: translateY(70%);
+}
+ p.real-name{
+  position: absolute;
+  top:65%;
+  font-size: 14px;
+  color:gray;
+}
+p.more{
+  position: absolute;
+  font-size: 15px;
+  top:75%;
+  color:gray
+  
+}
 @media only screen and (max-width: 600px) {
   .card {
     width: 24rem;
@@ -200,5 +217,8 @@ a:hover{
   .top-content{
     position: relative;
     top:10rem;
+  }
+  .btn{
+    left: -10px
   }
 }
