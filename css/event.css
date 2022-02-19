@@ -1,7 +1,22 @@
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+:root{
+  --primary: #54B9B8;
+     --secondary: #424242;
+     --bg: #121212;
+     --text: #fdfdfd;
+}
+
 .navbar-scroll{
   background-color:#2F3763;
-
-  ;
   transition-delay: background-color 3s;
 }
 .top-content{
@@ -11,7 +26,8 @@
   width: 95%;
   height: 100%;
   padding: 3%;
-  background-color: #6e6e6e;
+  background-color: #212121;
+  border-radius: 12px;
   margin:2% 3%;
   color:var(--text);
 }
@@ -182,7 +198,7 @@ a:hover{
   position: relative;
   top:30px;
   font-size: 25px;
-  color:var(--secondary);
+  color:white;
 }
 
 .carousel-inner ::after{
@@ -194,9 +210,20 @@ a:hover{
 }
 
 .btn{
-  position: relative;
-  transform: translateY(70%);
+  /* position: relative; */
+  /* transform: translateY(70%); */
+  margin: 0;
+  margin-top: 50px;
+  background-color: var(--primary);
+  color: white;
 }
+
+.nav-btn{
+  margin: 0 0 0 40px;
+  background: none;
+  color: var(--primary);
+}
+
  p.real-name{
   position: absolute;
   top:65%;
@@ -210,6 +237,15 @@ p.more{
   color:gray
   
 }
+
+.slides{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 600px) {
   .card {
     width: 24rem;

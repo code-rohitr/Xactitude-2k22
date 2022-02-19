@@ -22,10 +22,15 @@ font-family: 'Poppins', sans-serif;
  }
 
  :root{
-     --primary: #54B9B8;
+     /* --primary: #54B9B8;
      --secondary: #F7ECDE;
      --bg: #464646;
-     --text: #fdfdfd;
+     --text: #fdfdfd; */
+
+     --primary: #54B9B8;
+     --secondary: #424242;
+     --bg: #121212;
+     --text: #ffffff;
  }
 
 /* nav section */
@@ -162,6 +167,7 @@ font-family: 'Poppins', sans-serif;
 .hero-socials img{
     height: 40px;
     cursor: pointer;
+    filter: invert();
 }
 
 .main-logo{
