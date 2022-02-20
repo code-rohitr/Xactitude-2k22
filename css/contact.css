@@ -21,125 +21,41 @@ font-family: 'Poppins', sans-serif;
      text-decoration: none;
  }
 
- :root{
-     --primary: #54B9B8;
-     --secondary: #121212;
-     --bg: #212121;
-     --footer: #232931;
- }
+ 
+:root {
+  --primary: #54b9b8;
+  --secondary: #424242;
+  --bg: #121212;
+  --text: #fdfdfd;
+}
  
 
  .panel{
     /* border: 2px solid green; */
     position: absolute;
-    height: 100vh;
+    height: 90vh;
     top: 0;
     left: 0px;
     width: 50%;
-    background-color: var(--secondary);
+    background-color: #1F295B;
+    ;
     z-index: -1;
  }
 
  
 /* nav section */
-.nav{
-    /* border: 2px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    padding: 10px 5%;
-    /* height: 12vh;
-    border: 2px solid red; */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    transition: 100ms background-color ease-in-out;
-}
 
-.left-nav img{
-    /* border: 2px solid green; */
-    height: 80px;
-    filter: invert();
-}
-
-.right-nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.right-nav ul li{
-    margin-left: 40px;
-    list-style: none;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.2rem;
-    text-transform: capitalize;
-    cursor: pointer;
-    position: relative;
-    /* color: white; */
-    color: white;
-}
-
-.right-nav ul li::after{
-    position: absolute;
-    content: '';
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 10%;
-    background-color: var(--primary);
-    border-radius: 100px;
-    transition: 100ms width ease-in-out;
-}
-
-
-.right-nav ul li:hover::after{
-    width: 100%;
-}
-
-
-
-
-.btn{
-    border: 3px solid var(--primary);
+.nav-btn {
+    margin: 0 0 0 40px;
     background: none;
-    padding: 10px 30px;
-    font-size: 1.2rem;
     color: var(--primary);
-    border-radius: 100px;
-    cursor: pointer;
-    transition: 100ms color ease-in-out, 100ms background-color ease-in-out;
-}
+  }
 
-.nav-btn{
-    margin-left: 40px;
-}
 
-.nav-btn:hover{
-    background-color: var(--primary);
-    color: white;
-}
 
-.active{
-    position: relative;    
-}
 
-.active::before{
-    position: absolute;
-    content: '';
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    background-color: var(--primary);
-    border-radius: 100px;
-}
+
+
 
 h3,h4{
     line-height: 28px;
@@ -149,7 +65,7 @@ h3,h4{
 /* about hero section */
 .about-hero{
     /* border: 2px solid red;     */
-    height: 100vh;
+    height: 90vh;
     color: white;
     font-family: 'Poppins', sans-serif;
 
@@ -160,9 +76,18 @@ h3,h4{
     /* border: 2px solid red; */
     width: 70%;
     margin: 0px auto;
+    margin-bottom:20px ;
 }
 
-.about-common{
+.about-left{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.about-right{
     /* border: 2px solid yellow; */
     width: 45%;
     display: flex;
@@ -217,7 +142,7 @@ h3,h4{
     color: white;
     font-family: Poppins;
     font-style: normal;
-    padding-top: 30px;
+    padding-top: 10px;
     position: relative;
 }
 
@@ -302,3 +227,86 @@ h3,h4{
 .fade-in{
     background-color: var(--secondary);
 }
+
+@media only screen and (max-width: 800px) {
+    .nav{
+      height: 9rem;
+    }
+    .container{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      width: 23rem; 
+    }
+    .top-content {
+      position: relative;
+      top: 10rem;
+    }
+    .nav-btn{
+      position: relative;
+      margin: 0
+    }
+    .about-hero{
+        
+        flex-direction: column;
+        margin-top: 20vh;
+        margin-left: 10vh;
+        justify-content: space-evenly;
+        height: 80vh;
+        
+        margin-bottom:10px ;
+    }
+    .panel{
+        width: 100%;
+    }
+    .about-left,.about-right{
+        width: 100%;
+    }
+    .about-left > .contact-no> h2{
+        font-size: 20px;
+        
+    }
+    .about-left > .contact-no> h4{
+        font-size: 15px;
+        
+    }
+    .about-left > .website> h2{
+        font-size: 20px;
+        
+    }
+    .about-left > .website> h4{
+        font-size: 15px;
+        
+    }
+    .about-right > .address > h2{
+        font-size: 20px;
+        
+    }
+    .about-right > .address > h4{
+        font-size: 15px;
+        
+    }
+    .about-right > .email-id > h2{
+        font-size: 20px;
+        
+    }
+    .about-right > .email-id > h4{
+        font-size: 15px;
+        
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 140vh;
+    }
+    .footer-common > ul >a >li {
+        list-style-type: none;
+    }
+    .footer-common h3{
+        color: aqua;
+    }
+  }
