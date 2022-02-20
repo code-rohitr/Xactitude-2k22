@@ -259,13 +259,8 @@ p.more {
     height: 9rem;
   }
   .card {
-<<<<<<< HEAD
     width: 24rem;
     margin-left:15px; 
-=======
-    width: 23rem;
-    margin-left:3px; 
->>>>>>> 446a2e45740c4dd3b6626efb344325d33f8d11e6
   }
   .top-content {
     position: relative;
