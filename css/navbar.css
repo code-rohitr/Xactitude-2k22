@@ -15,6 +15,7 @@
   left: 0;
   right: 0;
   z-index: 10;
+  
 }
 
 .navbar-scroll {
@@ -43,7 +44,7 @@
   cursor: pointer;
   position: relative;
   /* color: white; */
-  color: var(--text);
+  color: #fff;
 }
 
 .right-nav ul li::after {
