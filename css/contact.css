@@ -44,8 +44,6 @@ font-family: 'Poppins', sans-serif;
 
  
 /* nav section */
-<<<<<<< HEAD
-=======
 .nav{
     /* border: 2px solid red; */
     display: flex;
@@ -67,7 +65,6 @@ font-family: 'Poppins', sans-serif;
     /* border: 2px solid green; */
     height: 80px;
 }
->>>>>>> eb1f0b381431b43a1ee9a20e9b1fa53a9c228703
 
 .nav-btn {
     margin: 0 0 0 40px;
@@ -253,90 +250,8 @@ h3,h4{
 }
 
 @media only screen and (max-width: 800px) {
-<<<<<<< HEAD
-    .nav{
-      height: 9rem;
-    }
-    .container{
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .card {
-      width: 23rem; 
-    }
-    .top-content {
-      position: relative;
-      top: 10rem;
-    }
-    .nav-btn{
-      position: relative;
-      margin: 0
-    }
-    .about-hero{
-        
-        flex-direction: column;
-        margin-top: 20vh;
-        margin-left: 10vh;
-        justify-content: space-evenly;
-        height: 80vh;
-        
-        margin-bottom:10px ;
-    }
-    .panel{
-        width: 100%;
-    }
-    .about-left,.about-right{
-        width: 100%;
-    }
-    .about-left > .contact-no> h2{
-        font-size: 20px;
-        
-    }
-    .about-left > .contact-no> h4{
-        font-size: 15px;
-        
-    }
-    .about-left > .website> h2{
-        font-size: 20px;
-        
-    }
-    .about-left > .website> h4{
-        font-size: 15px;
-        
-    }
-    .about-right > .address > h2{
-        font-size: 20px;
-        
-    }
-    .about-right > .address > h4{
-        font-size: 15px;
-        
-    }
-    .about-right > .email-id > h2{
-        font-size: 20px;
-        
-    }
-    .about-right > .email-id > h4{
-        font-size: 15px;
-        
-    }
-    .footer-container{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: 140vh;
-    }
-    .footer-common > ul >a >li {
-        list-style-type: none;
-    }
-    .footer-common h3{
-        color: aqua;
-=======
     ul a li{
       position: relative;
       left: -15px;
->>>>>>> eb1f0b381431b43a1ee9a20e9b1fa53a9c228703
     }
   }
