@@ -115,9 +115,11 @@
   display: none;
 }
 
+
+
 @media screen and (max-width: 1150px) {
   .left-nav img {
-    height: 65px;
+    height: 55px;
   }
 
   .main-logo {
@@ -150,8 +152,8 @@
     display: block;
   }
   .nav ul a li {
-    margin: 4px -2.2rem;
-    width: 440px;
+    margin:4px -5% ;
+    width: 100%;
     padding: 4%;
   }
 
