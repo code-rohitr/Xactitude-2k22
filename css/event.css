@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 :root {
   --primary: #54b9b8;
@@ -16,7 +16,6 @@ body {
   padding: 0px;
   background-color: var(--bg);
 }
-
 
 .top-content {
   margin-top: 8%;
@@ -40,9 +39,8 @@ body {
 a:hover {
   text-decoration: none;
 }
-.left-nav img{
-  height:110px;
-  transform: scale(1.2,1.2);
+.left-nav img {
+  height: 100px;
 }
 
 .event1 {
@@ -106,6 +104,9 @@ a:hover {
   transition: all 0.3s ease-out;
   text-decoration: none;
   margin-bottom: 2rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .card:hover {
@@ -245,17 +246,25 @@ p.more {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  .nav{
+    height: 9rem;
+  }
   .card {
-    width: 24rem;
+    width: 23rem;
+    margin-left:30px; 
   }
   .top-content {
     position: relative;
     top: 10rem;
   }
-  .btn {
-    left: -10px;
+  .nav-btn{
+    position: relative;
+    margin: 0;
   }
-}
+}  

@@ -6,16 +6,24 @@
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  padding: 10px 5%;
-  /* height: 12vh;
-    border: 2px solid red; */
+  padding: 25px 5%;
+  height: 12vh;
+  background-color: var(--bg);
+  /* border: 2px solid red; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
-  width: 100%;
+}
+
+.navbar-scroll {
+  background-color: var(--secondary);
 }
 
 .left-nav img {
   /* border: 2px solid green; */
-  height: 100px;
+  height: 110px;
 }
 
 .right-nav ul {
@@ -107,8 +115,6 @@
   display: none;
 }
 
-
-
 @media screen and (max-width: 1150px) {
   .left-nav img {
     height: 65px;
@@ -121,7 +127,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .active {
+  a .active {
     background-color: var(--primary);
   }
   #toggle-btn {
@@ -133,7 +139,7 @@
     height: 50%;
     background-color: var(--secondary);
     top: 110px;
-    left: -100%;
+    left: -110%;
     text-align: center;
     z-index: 10;
     display: block;

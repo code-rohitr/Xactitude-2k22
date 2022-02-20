@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,22 +22,22 @@
     <title>XACTITUDE|2022</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/navbar.css"/>
-    <link rel="stylesheet" href="./css/scrollbar.css"/>
-    <link rel="stylesheet" href="./css/hero-timer.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/scrollbar.css" />
+    <link rel="stylesheet" href="./css/hero-timer.css" />
 
     <!-- google fonts/icons CDN -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- particles js -->
     <script src="./particles.js-master/particles.js" defer></script>
     <script src="./particles.js-master/app.js" defer></script>
 
 </head>
+
 <body class="body">
-    
+
 
     <!-- nav section -->
     <section class="nav">
@@ -51,21 +52,30 @@
         <!-- nav links div -->
         <!-- <button id="toggle-btn">Small</button> -->
 
-        <input type="checkbox" id ="check" />
-        <label for ="check" class="check-btn">
+        <input type="checkbox" id="check" />
+        <label for="check" class="check-btn">
             <i class="fa fa-bars"></i>
         </label>
 
         <div class="right-nav">
-            
+
             <ul id="nav-items">
-                <a href="./index.html"><li class="active">home</li></a>
-                <a href="./templates/events.html"><li >events</li></a>
-                <a href="./templates/about.html"><li>about</li></a>     
+                <a href="./index.html">
+                    <li class="active">home</li>
+                </a>
+                <a href="./templates/events.html">
+                    <li>events</li>
+                </a>
+                <a href="./templates/about.html">
+                    <li>about</li>
+                </a>
+                <a href="./templates/contact.html">
+                    <li>contact</li>
+                </a>
                 <button class="btn nav-btn">REGISTER</button>
-                
+
             </ul>
-            
+
         </div>
     </section>
 
@@ -74,23 +84,24 @@
         <div id="particles-js" class="particles"></div>
         <div class="hero-socials">
             <a href="#"><img src="./resources/insta logo.svg" alt="insta logo"></a>
-            <a href="#"><img src="./resources/gmail logo.svg" alt="gmail logo"></a>   
+            <a href="#"><img src="./resources/gmail logo.svg" alt="gmail logo"></a>
         </div>
 
         <img src="./resources/logo test [Recovered].svg" alt="main logo" class="main-logo">
     </section>
 
-    
+
     <section id="home-section" class="hero js-fullheight" style="height: 956px;">
-		<!-- <h3 class="vr"><span>Robotic Process </span>Automation.</h3> -->
-		<div id="timer" class="text-center">
-			<div class="time" id="days">5<span>Days</span></div>
-			<div class="time" id="hours">02<span>Hours</span></div>
-			<div class="time" id="minutes">02<span>Minutes</span></div>
-			<div class="time" id="seconds">43<span>Seconds</span></div>
-		</div>
-	</section>
+        <!-- <h3 class="vr"><span>Robotic Process </span>Automation.</h3> -->
+        <div id="timer" class="text-center">
+            <div class="time" id="days">5<span>Days</span></div>
+            <div class="time" id="hours">02<span>Hours</span></div>
+            <div class="time" id="minutes">02<span>Minutes</span></div>
+            <div class="time" id="seconds">43<span>Seconds</span></div>
+        </div>
+    </section>
 
     <script src="./js/timer.js"></script>
 </body>
+
 </html>
