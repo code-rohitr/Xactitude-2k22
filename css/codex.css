@@ -115,6 +115,11 @@
 .inst1 div{
 width: 70%;
 }
+  .register_btns >*{
+    width: 70%;
+    margin-top:10px;
+    
+  }
 }
 @media only screen and (max-width: 500px) {
   .inst1{
@@ -160,3 +165,4 @@ margin:1%;
   position: relative;
   text-align: center;
 }
+
