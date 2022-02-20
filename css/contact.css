@@ -62,7 +62,6 @@ font-family: 'Poppins', sans-serif;
 .left-nav img{
     /* border: 2px solid green; */
     height: 80px;
-    filter: invert();
 }
 
 .right-nav ul{
@@ -302,3 +301,10 @@ h3,h4{
 .fade-in{
     background-color: var(--secondary);
 }
+
+@media only screen and (max-width: 800px) {
+    ul a li{
+      position: relative;
+      left: -15px;
+    }
+  }

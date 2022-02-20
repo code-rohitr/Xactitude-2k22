@@ -37,6 +37,7 @@ a {
   padding: 10px 5%;
   height: 12vh;
   background-color: var(--bg);
+  color:var(--text);
   /* border: 2px solid red; */
 
   position: fixed;
@@ -107,7 +108,7 @@ a {
   color: white;
 }
 
-.active {
+/* .active {
   position: relative;
 }
 
@@ -120,7 +121,7 @@ a {
   height: 10%;
   background-color: var(--primary);
   border-radius: 100px;
-}
+} */
 
 /* hero section */
 
@@ -200,4 +201,12 @@ a {
 
 .kjc h2 {
   margin: 0px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  ul li {
+    position: relative;
+    left: -15px;
+  }
 }
