@@ -1,135 +1,162 @@
 /* nav section */
-.nav,.navbar{
-    /* border: 2px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    padding: 10px 5%;
-    /* height: 12vh;
+.nav,
+.navbar {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  /* height: 12vh;
     border: 2px solid red; */
-    z-index:10;
+  z-index: 10;
+  width: 100%;
+}
+
+.left-nav img {
+  /* border: 2px solid green; */
+  height: 100px;
+}
+
+.right-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-nav ul li {
+  margin-left: 40px;
+  list-style: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+  /* color: white; */
+  color: var(--text);
+}
+
+.right-nav ul li::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 10%;
+  background-color: var(--primary);
+  border-radius: 100px;
+  transition: 100ms width ease-in-out;
+}
+
+.right-nav ul li:hover::after {
+  width: 100%;
+}
+
+.btn {
+  border: 3px solid var(--primary);
+  background: none;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  color: var(--primary);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 100ms color ease-in-out, 100ms background-color ease-in-out;
+}
+
+.nav-btn {
+  margin-left: 40px;
+}
+
+.nav-btn:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.active {
+  position: relative;
+}
+
+.active::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: var(--primary);
+  border-radius: 100px;
+}
+
+.check-btn {
+  color: #fff;
+  font-size: 30px;
+  padding: 2px;
+  float: right;
+  line-height: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+#toggle-btn {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+  .left-nav img {
+    height: 65px;
+  }
+
+  .main-logo {
+    top: 30%;
+    height: 145px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .active {
+    background-color: var(--primary);
+  }
+  #toggle-btn {
+    display: block;
+  }
+  .right-nav {
+    position: fixed;
     width: 100%;
-}
+    height: 50%;
+    background-color: var(--secondary);
+    top: 110px;
+    left: -100%;
+    text-align: center;
+    z-index: 10;
+    display: block;
+    transition: all 0.5s;
+    padding-top: 10%;
+  }
+  .nav ul {
+    display: block;
+  }
+  .nav ul a li {
+    margin: 4px -2.2rem;
+    width: 440px;
+    padding: 4%;
+  }
 
-.left-nav img{
-    /* border: 2px solid green; */
-    height: 100px;
-}
+  .check-btn {
+    display: block;
+  }
 
-.right-nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.right-nav ul li{
-    margin-left: 40px;
-    list-style: none;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.2rem;
-    text-transform: capitalize;
-    cursor: pointer;
-    position: relative;
-    /* color: white; */
-    color: var(--text);
-}
-
-.right-nav ul li::after{
-    position: absolute;
-    content: '';
-    bottom: 0;
+  #check:checked ~ .right-nav {
     left: 0;
-    width: 0%;
-    height: 10%;
-    background-color: var(--primary);
-    border-radius: 100px;
-    transition: 100ms width ease-in-out;
-}
-
-
-.right-nav ul li:hover::after{
-    width: 100%;
-}
-
-
-
-.btn{
-    border: 3px solid var(--primary);
-    background: none;
-    padding: 10px 30px;
-    font-size: 1.2rem;
-    color: var(--primary);
-    border-radius: 100px;
-    cursor: pointer;
-    transition: 100ms color ease-in-out, 100ms background-color ease-in-out;
-}
-
-.nav-btn{
-    margin-left: 40px;
-}
-
-.nav-btn:hover{
-    background-color: var(--primary);
-    color: white;
-}
-
-.active{
-    position: relative;    
-}
-
-.active::before{
-    position: absolute;
-    content: '';
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    background-color: var(--primary);
-    border-radius: 100px;
-}
-
-#toggle-btn{
-    display: none
-}
-
-@media screen and (max-width: 600px) {
-    #toggle-btn{
-        display: block;
-    }
-    .left-nav img{
-        height: 65px;
-    }
-    
-    
-    .main-logo{
-        margin-top:25%;
-        height: 20%;
-    }
-    .right-nav ul{
-        display: none;
-        justify-content: left;
-        width: 100%;
-        background-color:  var(--secondary);
-        width: 520px;
-       
-        
-    }
-    .right-nav ul li{
-        margin: 1% -20px;
-        padding: 3%;
-        width:450px;
-        height: 100%
-    }
-    .right-nav ul li::after{
-        background-color:  transparent;
-        transition: none;
-  
-    }
-    a :hover{
-        text-decoration:  none;
-    }
-    
+  }
+  .nav-btn {
+    margin-left: -2.2rem;
+  }
 }

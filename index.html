@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/navbar.css"/>
     <link rel="stylesheet" href="./css/scrollbar.css"/>
+    <link rel="stylesheet" href="./css/hero-timer.css"/>
 
     <!-- google fonts/icons CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -48,8 +49,15 @@
         </div>
 
         <!-- nav links div -->
-        <button id="toggle-btn">Small</button>
+        <!-- <button id="toggle-btn">Small</button> -->
+
+        <input type="checkbox" id ="check" />
+        <label for ="check" class="check-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+
         <div class="right-nav">
+            
             <ul id="nav-items">
                 <a href="./index.html"><li class="active">home</li></a>
                 <a href="./templates/events.html"><li >events</li></a>
@@ -73,5 +81,16 @@
     </section>
 
     
+    <section id="home-section" class="hero js-fullheight" style="height: 956px;">
+		<!-- <h3 class="vr"><span>Robotic Process </span>Automation.</h3> -->
+		<div id="timer" class="text-center">
+			<div class="time" id="days">5<span>Days</span></div>
+			<div class="time" id="hours">02<span>Hours</span></div>
+			<div class="time" id="minutes">02<span>Minutes</span></div>
+			<div class="time" id="seconds">43<span>Seconds</span></div>
+		</div>
+	</section>
+
+    <script src="./js/timer.js"></script>
 </body>
 </html>
