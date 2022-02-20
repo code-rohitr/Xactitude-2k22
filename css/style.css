@@ -84,3 +84,16 @@ a:hover {
   right: 5%;
   top: 30%;
 }
+
+@media screen and (max-width: 1150px) {
+    /* .left-nav {
+      height: 55px;
+      top:-10px;
+      position: relative;
+    } */
+  
+    .main-logo {
+      top: 45%;
+      height: 15%;
+    }
+  }

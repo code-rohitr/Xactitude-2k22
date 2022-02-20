@@ -7,7 +7,7 @@
   justify-content: center;
   justify-content: space-between;
   padding: 25px 5%;
-  height: 12vh;
+  /* height: 12vh; */
   background-color: var(--bg);
   /* border: 2px solid red; */
   position: fixed;
@@ -114,12 +114,20 @@
 #toggle-btn {
   display: none;
 }
-
+.carousel-inner ::after {
+    background-color: transparent;
+  }
+  
+  .carousel-inner ::before {
+    background-color: transparent;
+  }
 
 
 @media screen and (max-width: 1150px) {
   .left-nav img {
     height: 55px;
+   top:-15px;
+   position: relative;
   }
 
   .main-logo {
@@ -139,7 +147,7 @@
     position: fixed;
     margin-left:1%;
     width: 98%;
-    height: 50%;
+    height: 60%;
     background-color: var(--secondary);
     top: 110px;
     left: -110%;

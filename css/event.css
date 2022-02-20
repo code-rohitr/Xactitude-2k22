@@ -176,6 +176,9 @@ a:hover {
 .circle .svg {
   z-index: 2;
   transform: translateZ(0);
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
 }
 
 .overlay {
@@ -204,6 +207,8 @@ a:hover {
   color: white;
 }
 
+
+
 .carousel-inner ::after {
   background-color: transparent;
 }
@@ -225,6 +230,11 @@ a:hover {
   margin: 0 0 0 40px;
   background: none;
   color: var(--primary);
+}
+
+.carousel-item .btn:hover{
+  background-color:var(--primary);
+  color:var(--text);
 }
 
 p.real-name {
