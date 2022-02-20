@@ -1,0 +1,68 @@
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+.hero #timer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  background: #fbb901;
+  -webkit-box-shadow: -16px -16px 38px -17px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -16px -16px 38px -17px rgba(0, 0, 0, 0.19);
+  box-shadow: -16px -16px 38px -17px rgba(0, 0, 0, 0.19);
+  background-color: var(--primary);
+}
+@media (min-width: 1200px) {
+  .hero #timer {
+    width: 40%;
+  }
+}
+.hero #timer .time {
+  width: 25%;
+  font-size: 30px;
+  font-weight: 400;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgb(59, 59, 59);
+  padding: 0;
+  float: left;
+  padding: 10px 0;
+}
+@media (min-width: 768px) {
+  .hero #timer .time {
+    padding: 1.3em 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero #timer .time {
+    width: 50%;
+  }
+}
+.hero #timer .time:first-child {
+  border-left: transparent;
+}
+@media (min-width: 576px) {
+  .hero #timer .time:last-child {
+    background: #fff;
+    color: #000000;
+  }
+  .hero #timer .time:last-child span {
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+.hero #timer .time span {
+  font-size: 12px;
+  display: block;
+  color: rgba(2, 2, 2, 0.8);
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.speaker-wrap .text .time {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
