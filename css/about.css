@@ -48,8 +48,7 @@ font-family: 'Poppins', sans-serif;
 
  .left-nav img{
     /* border: 2px solid green;  */
-    height: 80px;
-    filter: invert();
+    height: 110px;
 }
 
 .right-nav ul{
