@@ -123,8 +123,8 @@
   }
 
   .main-logo {
-    top: 30%;
-    height: 145px;
+    top: 45%;
+    height: 15%;
   }
 }
 
@@ -137,7 +137,8 @@
   }
   .right-nav {
     position: fixed;
-    width: 100%;
+    margin-left:1%;
+    width: 98%;
     height: 50%;
     background-color: var(--secondary);
     top: 110px;

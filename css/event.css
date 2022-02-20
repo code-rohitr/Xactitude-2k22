@@ -252,12 +252,15 @@ p.more {
 }
 
 @media only screen and (max-width: 800px) {
+  body{
+    overflow-y: hidden;
+  }
   .nav{
     height: 9rem;
   }
   .card {
-    width: 23rem;
-    margin-left:30px; 
+    width: 24rem;
+    margin-left:15px; 
   }
   .top-content {
     position: relative;
@@ -265,6 +268,7 @@ p.more {
   }
   .nav-btn{
     position: relative;
-    margin: 0;
+    margin: 0
   }
-}  
+  
+}
