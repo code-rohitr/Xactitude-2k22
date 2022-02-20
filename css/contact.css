@@ -7,7 +7,7 @@ font-family: 'Poppins', sans-serif;
 
 
  html, body{
-     overflow-y: hidden ;
+     overflow-x: hidden ;
  }
 
  body{
@@ -25,6 +25,7 @@ font-family: 'Poppins', sans-serif;
      --primary: #54B9B8;
      --secondary: #121212;
      --bg: #212121;
+     --footer: #232931;
  }
  
 
@@ -54,6 +55,8 @@ font-family: 'Poppins', sans-serif;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
+    transition: 100ms background-color ease-in-out;
 }
 
 .left-nav img{
@@ -199,4 +202,103 @@ h3,h4{
 
 .contact-number:hover{
     text-decoration: underline;
+}
+
+
+/* footer section */
+.footer-container{
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 60vh;
+    background-color: var(--footer);
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    padding-top: 30px;
+    position: relative;
+}
+
+#copyright{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 27px;
+
+    position: absolute;
+    bottom: 0px;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-group{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.icon-container{
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: #333b46;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.social-icons img{
+    /* border: 2px solid red; */
+    /* background-color: var(--bg); */
+    filter: invert();
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.footer-common{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer-common h3{
+    /* border: 2px solid red; */
+    font-size: 1.3rem;
+    user-select: none;
+}
+
+.footer-common ul{
+    padding-left: 0px;
+}
+
+.footer-common ul a li{
+    text-transform: capitalize;
+    line-height: 30px;
+    /* list-style: none; */
+}
+
+.footer-common ul li:hover{
+    text-decoration: underline;
+}
+
+.e-mail-link{
+    text-transform: lowercase;
+}
+
+.fade-in{
+    background-color: var(--secondary);
 }
