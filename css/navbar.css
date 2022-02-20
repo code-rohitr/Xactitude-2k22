@@ -1,4 +1,18 @@
 /* nav section */
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  /* --primary: #54B9B8;
+     --secondary: #F7ECDE;
+     --bg: #464646;
+     --text: #fdfdfd; */
+
+  --primary: #54b9b8;
+  --secondary: #424242;
+  --bg: #121212;
+  --text: #ffffff;
+  --brou:#ff5145;
+}
 .nav,
 .navbar {
   /* border: 2px solid red; */
@@ -83,6 +97,18 @@
   color: white;
 }
 
+
+.broucher{
+  border: 3px solid  var(--brou);
+  color: var(--brou)
+}
+
+.broucher:hover {
+  background-color: var(--brou);
+  color: white;
+}
+
+
 .active {
   position: relative;
 }
@@ -123,6 +149,9 @@
     background-color: transparent;
   }
 
+a:hover{
+  text-decoration: none;
+}
 
 @media screen and (max-width: 1150px) {
   .left-nav img {
