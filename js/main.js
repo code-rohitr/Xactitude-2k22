@@ -6,8 +6,8 @@ $(document).ready(function () {
 
 $(window).on("scroll", function () {
   if ($(window).scrollTop()) {
-    $("navbar").addClass("navbar-scroll");
+    $(".nav").addClass("navbar-scroll");
   } else {
-    $("navbar").removeClass("navbar-scroll");
+    $(".nav").removeClass("navbar-scroll");
   }
 });
