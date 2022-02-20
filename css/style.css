@@ -37,6 +37,24 @@ a:hover {
 
 /* hero section */
 
+.container-main{
+    
+  height: 80vh;
+  width: 90vw;
+  margin-left: 5%;
+  background-color: #fffefe;
+  border-radius: 0.5em;
+  margin-top: 10%;
+  margin-bottom: 10px;
+  /* box-shadow: 0 2px 4px 0 rgba(131, 141, 236, 0.877),0 2px 10px 0 rgba(131, 141, 236, 0.877); */
+  box-shadow: 8px 8px 12px rgba(129, 129, 129, 0.2), -8px -8px 12px rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
 .hero {
   height: 90vh;
   background-color: var(--bg);
