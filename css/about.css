@@ -24,7 +24,7 @@ a {
 :root {
   --primary: #54b9b8;
   --secondary: #212121;
-  --bg2: #2c2c2c;
+  --bg2: #303030;
   --bg: #121212;
 }
 
@@ -144,6 +144,7 @@ a {
   font-size: 3rem;
   color: var(--primary);
   position: relative;
+  text-align: center;
 }
 
 .header::before {
@@ -195,7 +196,7 @@ a {
 
 .kjc {
   height: 100vh;
-  background-color: var(--secondary);
+  background-color: #212121;
   /* border: 2px solid red; */
 }
 
@@ -205,8 +206,172 @@ a {
 
 
 @media only screen and (max-width: 800px) {
-  ul li {
-    position: relative;
-    left: -15px;
+
+  ul li{
+    transform: translateX(-15px);
+  }
+  
+  .footer-common ul li{
+    transform: translateX(0px);
+
+  }
+
+  .text-content-container{
+    width: 90%;
+  }
+
+  .xactitude{
+    height: 100vh;
+    /* border: 2px solid red; */
+    width: 90%;
+  }
+
+  .cs-department{
+    height: 130vh;
+    /* border: 2px solid green; */
+  }
+
+  .kjc{
+    height: 100vh;
+  }
+
+  .header{
+    text-align: center;
+  }
+
+  .header::before{
+    margin-top: 10px;
+    height: 2%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .xactitude{
+    height: 100vh;
+  }
+
+  .cs-department{
+    height: 130vh;
+  }
+
+  .kjc{
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 682px) {
+  .kjc{
+    height: 120vh;
+  }
+} 
+
+@media only screen and (max-width: 632px) {
+  .cs-department{
+    height: 150vh;
+  }
+
+  .kjc{
+    height: 120vh;
+  }
+}
+
+@media only screen and (max-width: 541px) {
+
+  .xactitude{
+    height: 150vh;
+  }
+  .cs-department{
+    height: 200vh;
+  }
+  .kjc{
+    height: 180vh;
+  }
+}
+
+@media only screen and (max-width: 536px) {
+  .xactitude{
+    height: 120vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cs-department{
+    height: 190vh;
+  }
+  .kjc{
+    height: 160vh;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+
+  .xactitude{
+    height: 120vh;
+  }
+
+  .cs-department{
+    height: 220vh;
+  }
+
+  .kjc{
+    height: 180vh;
+  }
+
+}
+
+@media only screen and (max-width: 415px) {
+
+  .xactitude{
+    height: 150vh;
+  }
+
+  .cs-department{
+    height: 220vh;
+    /* border: 2px solid red; */
+  }
+
+  .kjc{
+    height: 200vh;
+  }
+}
+
+@media only screen and (max-width: 394px) {
+  .xactitude{
+    height: 160vh;
+  }
+
+  .cs-department{
+    height: 250vh;
+  }
+}
+
+
+@media only screen and (max-width: 376px) {
+
+  .left-nav img{
+    height: 50px;
+    margin-top: 20px;
+  }
+  .xactitude{
+    height: 200vh;
+  }
+  .cs-department{
+    height: 300vh;
+  }
+  .kjc{
+    height: 250vh;
+  }
+
+  .para{
+    width: 100%;
+  }
+
+  .kjc h2{
+    font-size: 2rem;
+  }
+
+  .cs-department h2{
+    font-size: 2rem;
   }
 }

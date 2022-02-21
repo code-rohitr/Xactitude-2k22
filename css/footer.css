@@ -1,5 +1,9 @@
 :root{
     --footer: #232931;
+    --primary: #54b9b8;
+    --secondary: #424242;
+    --bg: #121212;
+    --text: #ffffff;
 }
 
 
@@ -102,3 +106,69 @@
 }
 
 
+@media only screen and (max-width: 820px) {
+    .footer-container{
+        height: 40vh;
+    }
+
+    .icon-container{
+        height: 30px;
+        width: 30px;
+    }
+
+
+    .icon-container img{
+        height: 25px;
+    }
+
+    .footer-common{
+        margin: 0px 20px;
+    }
+
+    .footer-common h3{
+        font-size: 1.1rem;
+    }
+}   
+
+@media only screen and (max-width: 800px) {
+    
+    .footer-container{
+        flex-direction: column;
+        height: 130vh;
+        /* margin-top: 100px; */
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .social-icons{
+        /* border: 2px solid red; */
+        margin: 20px auto;
+    }
+
+    .footer-common{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-common h3{
+        color: var(--primary);
+        text-align: center;
+    }
+
+    .footer-common ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .footer-container{
+        height: 200vh;
+    }
+}
