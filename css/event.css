@@ -297,6 +297,9 @@ p.more {
     position: relative;
     top: 10rem;
   }
+  .footer-container{
+    margin-top:200px;
+  }
 
   
 }

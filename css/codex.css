@@ -125,7 +125,7 @@
 .inst1 div{
 width: 70%;
 }
-  .register_btns >*{
+  .register_btns > a >*{
     width: 70%;
     margin-top:10px;
     
