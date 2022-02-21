@@ -52,11 +52,18 @@ a:hover {
   height: 100px;
 }
 
+:root{
+  --bg-logo:#fff;
+  --filt: none;
+}
 .event1 {
   --bg-color: #f7c739;
   --bg-color-light: #ffeeba;
   --text-color-hover: #fff;
   --box-shadow-color: rgba(255, 215, 97, 0.48);
+  --bg-logo: #000;
+  --filt:invert();
+
 }
 
 .event2 {
@@ -188,6 +195,9 @@ a:hover {
   height: 50%;
   width: 50%;
   border-radius: 50%;
+  background-color: var(--bg-logo);
+  filter:var(--filt);
+
 }
 
 .overlay {
