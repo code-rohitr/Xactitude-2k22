@@ -90,13 +90,14 @@ h3,h4{
     color: white;
     font-family: 'Poppins', sans-serif;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
     /* border: 2px solid red; */
-    width: 70%;
-    margin: 0px auto;
+    width: 100%;
+    margin: 0px 10%;
     margin-bottom:20px ;
 }
 
@@ -125,12 +126,13 @@ h3,h4{
 .header-common h2{
     /* border: 2px solid red; */
     color: var(--primary);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     position: relative;
 }
 
 .header-common h4{
-    font-weight: 400;
+    font-weight: 200;
+    font-size: 1.5rem;
 }
 
 .about-icons{
@@ -245,13 +247,26 @@ h3,h4{
     text-transform: lowercase;
 }
 
+
 .fade-in{
     background-color: var(--secondary);
 }
 
 @media only screen and (max-width: 800px) {
-    ul a li{
-      position: relative;
-      left: -15px;
+    .about-hero{
+        margin-top:30%;
+        grid-template-columns: auto;
+        font-family: Poppins;     
     }
+    
+    .panel{
+        height: 60%;
+        width: 100%;
+    }
+    hr{
+        display: block;
+        border-top:1px solid gray;
+        margin:5px;
+    }
+    
   }
