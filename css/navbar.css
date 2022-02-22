@@ -39,6 +39,7 @@
 .left-nav img {
   /* border: 2px solid green; */
   height: 110px;
+  /* filter: invert(); */
 }
 
 .right-nav ul {
@@ -97,13 +98,13 @@
   color: white;
 }
 
-
-.broucher{
+.brochure{
   border: 3px solid  var(--brou);
-  color: var(--brou)
+  color: var(--brou);
+  text-transform: uppercase;
 }
 
-.broucher:hover {
+.brochure:hover {
   background-color: var(--brou);
   color: white;
 }

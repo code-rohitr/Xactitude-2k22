@@ -46,6 +46,11 @@
   line-height: 1.2;
   font-weight: 400;
 }
+
+
+.mr-2{
+  text-transform: uppercase;
+}
 @media (max-width: 991.98px) {
   .slider-text h1 {
     font-size: 40px;
@@ -72,6 +77,7 @@
   background-color: var(--bg);
   color:var(--text);
   font-family: Poppins;
+  font-size: 1.07rem;
   }
   .hd1 {
     
@@ -154,6 +160,7 @@ margin:1%;
   font-family: Poppins;
 }
 
+
 .div1 p {
   color: white;
   font-family: Poppins;
@@ -163,6 +170,7 @@ margin:1%;
   display: flex;
   padding: 10px 10px;
   width: 100%;
+  margin-top:-60px;
 }
 
 .div1 div {

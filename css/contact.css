@@ -90,13 +90,13 @@ h3,h4{
     color: white;
     font-family: 'Poppins', sans-serif;
 
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+/*     grid-template-columns: auto auto; */
     align-items: center;
     justify-content: center;
     justify-content: space-between;
     /* border: 2px solid red; */
-    width: 100%;
+    width: 80%;
     margin: 0px 10%;
     margin-bottom:20px ;
 }
@@ -260,7 +260,7 @@ h3,h4{
     }
     
     .panel{
-        height: 60%;
+        height: 70%;
         width: 100%;
     }
     hr{
