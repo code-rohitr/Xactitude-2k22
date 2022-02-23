@@ -120,4 +120,8 @@ a:hover {
       top: 45%;
       height: 10%;
     }
+  .dates{
+    top:55%;
+    font-size: 13px;
+  }
   }
