@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+    background-color: var(--bg);
+    color:#fff;
+}
+.top-content{
+    font-family: Poppins;
+    margin-top:10%;
+}
+.hd2::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 1px;
+    bottom: 0;
+    left: 45%;
+    border-bottom: 5px solid var(--primary);
+}
+
+
+.details{
+    position: relative;
+    margin: 4px 8%;
+    padding-left: 10%;
+    width:60%;
+    left: 10%;
+    
+}
+.details .row{
+    border:1px solid rgb(66, 66, 66);
+    padding:1%;
+    font-size: 1.05rem;
+}
+
+.details .row:hover{
+    background-color: rgb(34, 34, 34);
+}
+
+.pi{
+    font-family: 'Playfair Display', serif;
+}
+.event-date  {
+    padding: 1%;
+    border:none;
+}
+.day2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+        
+}
+
+/* .hd{
+    text-align:  center;
+    width:100%;
+}
+    
+/*     height:70vh;
+    margin-top: 10%;
+   
+    
+    width:60%;
+    text-align: center;
+ */
+
